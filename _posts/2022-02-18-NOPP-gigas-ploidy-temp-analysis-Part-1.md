@@ -16,7 +16,7 @@ variable: ploidy, elevated seawater temperature, desiccation <br />
 
 [previous notebook entry](https://mattgeorgephd.github.io/NOPP-gigas-ploidy-temp-RNA-extractions/)
 
-[next notebook entry]()
+[next notebook entry](https://mattgeorgephd.github.io/NOPP-gigas-ploidy-temp-analysis-Part-2/)
 
 
 ### Background
