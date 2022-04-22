@@ -4,7 +4,7 @@ title: Wed. Feb. 03, 2021
 subtitle: Metabolic rate - oysters - ploidy - temperature
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: oyster temperature triploid diploid metabolic rate SMR
+tags: NOPP-gigas-ploidy-temp
 comments: true
 ---
 

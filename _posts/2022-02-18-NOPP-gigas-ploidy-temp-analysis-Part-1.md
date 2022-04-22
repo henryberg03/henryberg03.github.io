@@ -4,7 +4,7 @@ title: Fri. Feb. 18, 2022
 subtitle: NOPP-gigas-ploidy-temp analysis - Part 1
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: oyster temperature triploid diploid RNazol nanodrop bioanalyzer
+tags: NOPP-gigas-ploidy-temp
 comments: true
 ---
 

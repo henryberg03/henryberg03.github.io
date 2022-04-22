@@ -4,7 +4,7 @@ title: Tues. Mar. 16, 2021
 subtitle: Bisulfide sequencing analysis - Part 1
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: oyster temperature triploid diploid bismark mox bowtie2
+tags: gigas-WGBS-ploidy-desiccation oyster temperature triploid diploid bismark mox bowtie2
 comments: true
 ---
 

@@ -4,7 +4,7 @@ title: Sat. Sept. 04, 2021
 subtitle: September 2021 - Update & Monthly Goals
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: update monthly goals
+tags: monthly-goals
 comments: true
 ---
 

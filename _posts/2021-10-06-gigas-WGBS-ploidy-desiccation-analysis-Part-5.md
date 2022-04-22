@@ -4,7 +4,7 @@ title: Fri. Oct. 6, 2021
 subtitle: Bisulfide sequencing analysis - Part 5
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: oyster temperature triploid diploid methylkit DML
+tags: gigas-WGBS-ploidy-desiccation oyster temperature triploid diploid methylkit DML
 comments: true
 ---
 

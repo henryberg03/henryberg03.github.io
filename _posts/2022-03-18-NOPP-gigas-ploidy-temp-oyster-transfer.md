@@ -4,7 +4,7 @@ title: Thu. Mar. 18, 2022
 subtitle: Oyster family transfer
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: oyster temperature triploid diploid metabolic rate SMR
+tags: NOPP-gigas-ploidy-temp-analysis
 comments: true
 ---
 
