@@ -5,13 +5,31 @@ title: Publications
 
 I can also be found on [Google Scholar](https://scholar.google.com/citations?user=UwQnG2IAAAAJ&hl=en), [ResearchGate](https://www.researchgate.net/profile/Matthew-George) and [ORCID](https://orcid.org/0000-0003-1264-8667).
 
+---
+
+## *In preparation*
+
+**George MN**, Cattau O, Vadopalas B, Gavery M, and Roberts SB (in prep). Investigating the etiology of triploid mortality: differences in the physiological and genomic response of diploid and triploid Pacific Oysters to marine heatwaves.
+
+**George MN**, Jain R*, Trigg S, and Roberts SB (in prep). Diploid and triploid Pacific Oysters display different DNA methylation patterns after desiccation stress.
+
+Payne M*, **George MN**, Lowe A, Carrington E, and Ruesink J (in prep). Mussel aquaculture in future oceans: fatty acid analysis reveals how climate-driven changes in stratification alter food availability.
+
+**George MN**, Hayford H, and Carrington E (in prep). Ocean acidification negatively impacts the growth and appetite of predatory snails (N. ostrina).
+
+---
+
+## *Under review, accepted, in Press*
+
+**George MN**, Liu X, Miller A, Zuiker E*, Xu H, and Lu L. (in press) An injectable, pH-responsive, adhesive hydrogel for bone tissue engineering inspired by the underwater attachment strategy of marine mussels. Materials and Engineering C. [10.1016/j.msec.2021.112606](https://doi.org/10.1016/j.msec.2021.112606)
+
+Clements J and **George MN** (accepted). Ocean acidification and bivalve byssus: explaining variable responses using meta-analysis. Marine Ecology Progress Series. Preprint available on [EcoEvoRxiv](https://ecoevorxiv.org/6bpqm/).
+
+---
+
 ## *Publications within Marine Science*
 
-Payne M, **George MN**, Lowe A, Carrington E, and Ruesink J (in prep). Mussel aquaculture in future oceans: fatty acid analysis reveals how climate-driven changes in stratification alter food availability. Marine Ecological Progress Series.
-
-**George MN**, Hayford H, and Carrington E (in prep). Ocean acidification impacts the growth and appetite of predatory snails (N. ostrina). Ecology Letters.
-
-**George MN** O’Donnell MJ, Concodello M*, Carrington E (in prep). Ocean acidification weakens, but does not prevent, shell repair after simulated predation in marine mussels. Journal of Marine Science and Engineering.
+**George MN**, O’Donnell MJ, Concodello M*, Carrington E (2022). Mussels Repair Shell Damage despite Limitations Imposed by Ocean Acidification. Journal of Marine Science and Engineering 10(3):359. [10.3390/jmse10030359](https://doi.org/10.3390/jmse10030359).
 
 **George MN**, Andino J*, Huie J*, and Carrington E (2019). Microscale pH and dissolved oxygen fluctuations within mussel aggregations and their implications for mussel attachment and raft aquaculture. Journal of Shellfish Research 38:795-809. [10.2983/035.038.0329](https://bioone.org/journals/journal-of-shellfish-research/volume-38/issue-3/035.038.0329/Microscale-pH-and-Dissolved-Oxygen-Fluctuations-within-Mussel-Aggregations-and/10.2983/035.038.0329.full).
 
@@ -30,8 +48,6 @@ Swanson BO, **George MN**, Anderson SJ*, and Christy J (2013). Evolutionary vari
 ---
 
 ## *Publications within Biomedicine*
-
-**George MN**, Liu X, Miller A, Zuiker E*, Xu H, and Lu L. (under review) An injectable, pH-responsive, adhesive hydrogel for bone tissue engineering inspired by the underwater attachment strategy of marine mussels. Materials and Engineering C.
 
 **George MN**, Leavens KF, and Gadue P. (2021). Genome Editing Human Pluripotent Stem Cells to Model β-Cell Disease and Unmask Novel Genetic Modifiers. Frontiers in Endocrinology, 12, 643. [10.3389/fendo.2021.682625](https://doi.org/10.3389/fendo.2021.682625)
 
