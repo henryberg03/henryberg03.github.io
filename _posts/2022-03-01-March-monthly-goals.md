@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sun. Jan. 30, 2022
+title: Sun. Mar. 01, 2022
 subtitle: March 2022 - Update & Monthly Goals
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
