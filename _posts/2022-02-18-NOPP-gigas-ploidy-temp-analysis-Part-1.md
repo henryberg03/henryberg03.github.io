@@ -12,11 +12,12 @@ Project name: [NOPP-gigas-ploidy-temp](https://github.com/mattgeorgephd/NOPP-gig
 Funding source: [National Oceanographic Partnership Program](https://www.nopp.org/) <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, elevated seawater temperature, desiccation <br />
+Github repo: [NOPP-gigas-ploidy-temp](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp)
 
 
-[previous notebook entry](https://mattgeorgephd.github.io/NOPP-gigas-ploidy-temp-RNA-extractions/)
-
-[next notebook entry](https://mattgeorgephd.github.io/NOPP-gigas-ploidy-temp-analysis-Part-2/)
+<< [previous notebook entry](https://mattgeorgephd.github.io/NOPP-gigas-ploidy-temp-RNA-extractions/) <<
+| >>
+[next notebook entry](https://mattgeorgephd.github.io/NOPP-gigas-ploidy-temp-analysis-Part-2/) >>
 
 
 ### Background
@@ -29,4 +30,8 @@ The zipped fastq files are available on gannet [here](https://gannet.fish.washin
 
 Here is the [multiQC report](https://gsafjobs.icmb.utexas.edu/qc/JA21499/SA22026/multiqc/multiqc_report.html) that GSAF provided.
 
-For analysis I will be leaning on notebook entries by [Laura](https://nbviewer.org/github/laurahspencer/O.lurida_QuantSeq-2020/blob/master/notebooks/2020-QuantSeq-Processing_Raw-to-Counts.ipynb) and [Ariana](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/blob/master/Mcap2020/Scripts/TagSeq/TagSeq_BioInf_genomeV2.md)
+For analysis I will be leaning on notebook entries by:
+
+1. [Laura Spencer](https://nbviewer.org/github/laurahspencer/O.lurida_QuantSeq-2020/blob/master/notebooks/2020-QuantSeq-Processing_Raw-to-Counts.ipynb);
+2. [Ariana Huffmyer](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics/blob/master/Mcap2020/Scripts/TagSeq/TagSeq_BioInf_genomeV2.md); and
+3. [Sam Gurr](https://samgurr.github.io/SamJGurr_Lab_Notebook/analysis/2021/01/07/Oyster-TagSeq-Pipeline.html)
