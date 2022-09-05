@@ -162,6 +162,27 @@ ssh mngeorge@mox.hyak.uw.edu
 ```
 ssh mngeorge@gannet.fish.washington.edu <login>
 cd /volume2/web/panopea/PSMFC-mytilus-byssus-pilot/
-rsync --archive --progress --verbose --relative ./20220405-tagseq mngeorge@mox.hyak.uw.edu:/gscratch/srlab/mngeorge/data/m
+rsync --archive --progress --verbose --relative ./20220405-tagseq mngeorge@mox.hyak.uw.edu:/gscratch/srlab/mngeorge/data/mtrossulus
 
+rsync --archive --progress --verbose --relative ./SRA mngeorge@mox.hyak.uw.edu:/gscratch/srlab/mngeorge/data/mtrossulus
+
+#the serve was disconnected half way through, so I ran this:
+
+rsync --archive --progress --verbose --relative --ignore-existing --dry-run ./sbatch_scripts mngeorge@mox.hyak.uw.edu:/gscratch/srlab/mngeorge/sbatch_scripts
+
+```
+
+### Add job to queue
+```
+cd /gscratch/srlab/mngeorge/sbatch_scripts
+sbatch 202208_PSMFC-mytilus-byssus-pilot_trinity.sh
+```
+### Check Job Status
+```
+scontrol show job 3608308
+```
+or
+
+```
+squeue
 ```
