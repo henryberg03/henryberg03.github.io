@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sun. Sep. 04, 2022
+title: Mon. Sep. 05, 2022
 subtitle: Berdahl-sockeye-salmon analysis - Part 2
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
