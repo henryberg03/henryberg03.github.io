@@ -4,7 +4,7 @@ title: Mon. Sep. 05, 2022
 subtitle: Berdahl-sockeye-salmon analysis - Part 2
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: monthly-goals
+tags: Berdahl-sockeye-salmon TagSeq
 comments: true
 ---
 
@@ -58,7 +58,7 @@ coldata %>% dplyr::count(trt)
 all(colnames(cts) %in% rownames(coldata))
 ```
 
-Using the good samples, I compared territorial vs. social salmon and generated the following [DEG list](https://github.com/mattgeorgephd/Berdahl-sockeye-salmon/blob/main/tag-seq/DESEQ_output/gonad/GONAD-ALL-DEG.csv). From this list I made the following volcano plot, PCA (+ pairs plot), and pheat map comparing the impact of treatment:
+Using the good samples, I compared territorial vs. social salmon and generated the following [DEG list](https://github.com/mattgeorgephd/Berdahl-sockeye-salmon/blob/main/tag-seq/DESEQ_output/gonad/GONAD-ALL-DEG.csv). From this list I made the following volcano plot, PCA (+ pairs plot), and pheat map comparing the impact of treatment: </br>
 
 |   |   |
 |---|---|
@@ -93,7 +93,8 @@ Here is the [full significant apeglm-DEG list](https://github.com/mattgeorgephd/
 
 I threw this list into [DAVID](https://david.ncifcrf.gov/home.jsp) and used the O.nerka genome as a background. This resulted in 53 GO terms, 13 of which were associated with KEGG pathways.
 
-### GO terms:
+### GO terms: </br>
+
 | OFFICIAL_GENE_SYMBOL | Name                                                                     | Species            |
 |----------------------|--------------------------------------------------------------------------|--------------------|
 | 115103583            | dynein light chain 4, axonemal-like(LOC115103583)                        | Oncorhynchus nerka |
@@ -151,7 +152,8 @@ I threw this list into [DAVID](https://david.ncifcrf.gov/home.jsp) and used the 
 | 115125542            | calcyphosin-like protein(LOC115125542)                                   | Oncorhynchus nerka |
 
 
-### KEGG Pathways:
+### KEGG Pathways: </br>
+
 | ID        | Gene Name                                                                | Species            | KEGG_PATHWAY                                                                                                                |
 |-----------|--------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | 115141814 | 14-3-3 protein gamma-2-like(LOC115141814)                                | Oncorhynchus nerka | one04110:Cell cycle,one04114:Oocyte meiosis,                                                                                |
