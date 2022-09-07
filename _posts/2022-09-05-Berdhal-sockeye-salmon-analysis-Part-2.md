@@ -31,7 +31,7 @@ Raw sequences were processed using the this [R script](https://github.com/mattge
 
 Using this [treatment conditions datasheet](https://github.com/mattgeorgephd/Berdahl-sockeye-salmon/blob/main/tag-seq/data/treatments.csv), and this [genome feature table](https://gannet.fish.washington.edu/panopea/berdahl-sockeye-salmon/genome/Onerka_LOCID_gene_table.txt), I ran DESeq2 using this [gene count matrix](https://github.com/mattgeorgephd/Berdahl-sockeye-salmon/blob/main/tag-seq/data/onerka_gene_count_matrix.csv).
 
-```{r, warning=FALSE, include=TRUE}
+```
 # Filter data
 coldata_trt <- coldata # %>% filter(group == "A" | group == "B")
 cts_trt     <- subset(cts, select=row.names(coldata_trt))
@@ -44,12 +44,14 @@ resultsNames(dds) # lists the coefficients
 ```
 
 I filtered out genes with cumulative counts less than 10 across all samples:
+
 ```
 # https://support.bioconductor.org/p/110307/
 dds <- dds[rowSums(DESeq2::counts(dds)) >= 10,]
 ```
 
 I then looked at the pheatmaps and multiqc report, I removed two low quality samples (one from each treatment, major outliers in PCA and ~88% overlap with rest of samples):
+
 ```
 # Remove bad samples: C05, C17
 coldata <- coldata[!(row.names(coldata) %in% c('C05', 'C17')),]
@@ -93,7 +95,7 @@ Here is the [full significant apeglm-DEG list](https://github.com/mattgeorgephd/
 
 I threw this list into [DAVID](https://david.ncifcrf.gov/home.jsp) and used the O.nerka genome as a background. This resulted in 53 GO terms, 13 of which were associated with KEGG pathways.
 
-### GO terms: </br>
+### GO terms:
 
 | OFFICIAL_GENE_SYMBOL | Name                                                                     | Species            |
 |----------------------|--------------------------------------------------------------------------|--------------------|
@@ -152,7 +154,7 @@ I threw this list into [DAVID](https://david.ncifcrf.gov/home.jsp) and used the 
 | 115125542            | calcyphosin-like protein(LOC115125542)                                   | Oncorhynchus nerka |
 
 
-### KEGG Pathways: </br>
+### KEGG Pathways:
 
 | ID        | Gene Name                                                                | Species            | KEGG_PATHWAY                                                                                                                |
 |-----------|--------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
