@@ -132,7 +132,8 @@ Here are some results:
 | ploidy | ![](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/blob/main/202107_EXP2/tag-seq/output/filtered/HISAT2_multiqc_biplot/control_ploidy/CONTROL-PLOIDY-PCA.png?raw=true) | ![](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/blob/main/202107_EXP2/tag-seq/output/filtered/HISAT2_multiqc_biplot/heat_ploidy/HEAT-PLOIDY-PCA.png?raw=true) | ![](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/blob/main/202107_EXP2/tag-seq/output/filtered/HISAT2_multiqc_biplot/desiccation_ploidy/DESICCATION-PLOIDY-PCA.png?raw=true) |
 
 **DEG: significant genes by treatment:**
-</br> Differentially expressed genes with p<0.05 and log2fold change > 1.5, using the `apeglm` shrinkage estimator
+
+Differentially expressed genes with p<0.05 and log2fold change > 1.5, using the `apeglm` shrinkage estimator
 
 | comparison   | control | single-stressor   | multi-stressor   |
 |:---:|:---:|:---:|:--:|
