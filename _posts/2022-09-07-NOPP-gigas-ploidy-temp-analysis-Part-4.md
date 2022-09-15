@@ -41,17 +41,30 @@ Here are the results:
 
 **DEG LISTS: summary stats**
 
-About half of the LOCIDs associated with the DEGS were unknown within each comparison (SS = single stressor; MS = multi-stressor)
+35% - 60% of identified DEGS were uncharacterized (LOCID w/o annotation) across treatments (SS = single stressor; MS = multi-stressor)
 
-| ploidy | treatment | known | unknown | percent_unknown |
-|:---: |:---:|:---:|:---:| :---:|
-| both | control v control  | 44 | 65 | 0.60 |
-| both | SS v SS | 182 | 161  | 0.469 |
-| both | MS v MS  | 60  | 78  | 0.565 |
-| diploid  | SS v control  | 174  | 142  | 0.45 |
-| diploid  | MS v control  | 45  | 27  | 0.375 |
-| triploid | SS v control  | 59  | 33  | 0.36 |
-| triploid | MS v control | 40 | 22  | 0.35 |
+| ploidy | treatment | total | known | unknown | percent_unknown |
+|:---: |:---:|:---:|:---:| :---:|  :---:|
+| both | control v control  | 109 | 44 | 65 | 60% |
+| both | SS v SS | 343 | 182 | 161  | 46.9% |
+| both | MS v MS  | 138 | 60  | 78  | 56.5% |
+| diploid  | SS v control | 316 | 174  | 142  | 45% |
+| diploid  | MS v control | 72 | 45  | 27  | 37.5% |
+| triploid | SS v control | 92 | 59  | 33  | 36% |
+| triploid | MS v control | 62 | 40 | 22  | 35% |
+
+Direction of log2fold change expression for DEGs.
+
+| comparison           | total | positive | negative | percent_negative | percent_positive |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| control_ploidy       | 109   | 80       | 29       | 26.6             | 73.4             |
+| SS_ploidy          | 344   | 290      | 54       | 15.7             | 84.3             |
+| MS_ploidy   | 138   | 81       | 57       | 41.3             | 58.7             |
+| diploid_SS         | 317   | 90       | 227      | 71.6             | 28.4             |
+| diploid_MS  | 74    | 46       | 28       | 37.8             | 62.2             |
+| triploid_SS        | 94    | 35       | 59       | 62.8             | 37.2             |
+| triploid_MS | 62    | 33       | 29       | 46.8             | 53.2             |
+
 
 **DEG LISTS: links to lists**
 
