@@ -172,14 +172,30 @@ rsync --archive --progress --verbose --relative --ignore-existing --dry-run ./sb
 
 ```
 
+### Add paths to ~/.bashrc file
+```
+
+# Open bashrc w/ nano
+nano ~/.bashrc
+
+
+
+
+# Check inclusion
+echo "$PATH//:/$'\n'}"
+
+```
+
+
 ### Add job to queue
 ```
-cd /gscratch/srlab/mngeorge/sbatch_scripts
+# Added 9/16/2022 - data on scrubbed for only 21 days
+cd /gscratch/scrubbed/mngeorge/sbatch_scripts
 sbatch 202208_PSMFC-mytilus-byssus-pilot_trinity.sh
 ```
 ### Check Job Status
 ```
-scontrol show job 3608308
+scontrol show job 3897217
 ```
 or
 
