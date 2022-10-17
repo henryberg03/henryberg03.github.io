@@ -4,7 +4,7 @@ title: Mon. Nov. 15, 2021
 subtitle: Bisulfide sequencing analysis - Part 6
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: gigas-WGBS-ploidy-desiccation methylkit DML
+tags: gigas-WGBS-ploidy-desiccation
 comments: true
 ---
 

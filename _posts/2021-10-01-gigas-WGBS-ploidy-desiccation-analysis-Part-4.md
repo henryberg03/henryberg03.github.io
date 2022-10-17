@@ -4,7 +4,7 @@ title: Wed. Oct. 1, 2021
 subtitle: Bisulfide sequencing analysis - Part 4
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: gigas-WGBS-ploidy-desiccation oyster temperature triploid diploid methylkit DML "genome feature location"
+tags: gigas-WGBS-ploidy-desiccation
 comments: true
 ---
 

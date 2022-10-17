@@ -13,7 +13,7 @@ Funding source: [Pacific States Marine Fisheries Commission](https://www.psmfc.o
 Species: *mytilus galloprovincialis*, *mytilus trossulus* <br />
 variable: OA, DO, seawater temperature, desiccation <br />
 
-[next notebook entry]()
+[>> next notebook entry >>](https://mattgeorgephd.github.io/PSMFC-mytilus-byssus-pilot-analysis-Part-2/)
 
 ------------------------------------------------------------------------------------------------------
 # Download and QC [tag-seq](https://gannet.fish.washington.edu/panopea/PSMFC-mytilus-byssus-pilot/20220405-tagseq/) data received on 7/14/2022

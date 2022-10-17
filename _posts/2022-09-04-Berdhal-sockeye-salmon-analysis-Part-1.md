@@ -4,7 +4,7 @@ title: Sun. Sep. 04, 2022
 subtitle: Berdahl-sockeye-salmon analysis - Part 1
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: Berdahl-sockeye-salmon TagSeq
+tags: Berdahl-sockeye-salmon
 comments: true
 ---
 
