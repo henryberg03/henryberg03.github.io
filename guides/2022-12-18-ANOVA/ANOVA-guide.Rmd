@@ -15,59 +15,71 @@ Load packages; if missing, install them
 rm(list=ls())
 
 ## Load Packages; if missing, install them
-load.lib<-c("readxl","tidyverse","bestNormalize","agricolae","nlme","multcomp","rstatix") # List of required packages
+load.lib<-c("tidyverse","bestNormalize","agricolae","nlme","multcomp","beepr") # List of required packages
 install.lib <- load.lib[!load.lib %in% installed.packages()] # Select missing packages
 for(lib in install.lib) install.packages(lib,dependencies=TRUE) # Install missing packages + dependencies
 sapply(load.lib,require,character=TRUE) # Load all packages.
 
 ```
 
+LOAD Dataset
 ```{r}
+dat_stat <- read.csv(file = "https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/ATPase_dataset.csv")
+
+head(dat_stat)
 
 ```
 
 
-
-
-Statistical Testing
+Prepare dataset for statistical testing
 ```{R}
-atpase_plot     <- read_excel("ATPase/ATPase.xlsx",
-                              sheet = "stat", col_names = TRUE)
-dat_stat <- atpase_plot_all
+# Define dataset
+dat_stat <- dat_stat
+
+# Assign factors
+dat_stat$treatment  <- factor(dat_stat$treatment, levels = c("control","SS","MS"))
+dat_stat$ploidy     <- factor(dat_stat$ploidy)
+dat_stat$timepoint  <- factor(dat_stat$timepoint, levels = c("0","11","12","15","20"), ordered = "TRUE")
+
+# Assign response variable
 test_me <- dat_stat$ATPase
 
-dat_stat$ID         <- factor(dat_stat$ID)
-dat_stat$trt        <- factor(dat_stat$trt)
-dat_stat$ploidy     <- factor(dat_stat$ploidy)
-dat_stat$timepoint  <- factor(dat_stat$timepoint)
-
-qqnorm(test_me) # check linearity of transformed data
+# Test for normality
+qqnorm(test_me, main = "Q-Q Plot: untransformed") # check linearity
 qqline(test_me)
-norm_test <- shapiro.test(test_me) # p-value fail = good, don't need transformation
-print(norm_test$p.value)
+norm_test <- shapiro.test(test_me) # p-value > 0.05 = good, don't need transformation
+print(paste("shapiro test p-value, untransformed:", norm_test$p.value))
 
+# Normalize response variable if normality test failed
 if(norm_test$p.value<0.05)     {
-        normalized <- bestNormalize(test_me)
+        normalized <- bestNormalize(test_me, main = "Q-Q Plot: transformed")
         test_me <- normalized$x.t # overwrite
-        qqnorm(test_me) # check linearity of transformed data
+        qqnorm(test_me) # check linearity of transformed response
         qqline(test_me)
-        print(shapiro.test(test_me))
-        print("transformed!",quote=FALSE)}
+        norm_test <- shapiro.test(test_me) # p-value > 0.05 = good
+        print(paste("shapiro test p-value, transformed:", norm_test$p.value))}
+dat_stat$response <- test_me # overwrite
+```
 
-dat_stat$response <- test_me 
-
-my_test <- aov(response ~ ploidy * timepoint * trt, data = dat_stat)
-
+Run ANOVA
+```{r}
+# Run ANOVA
+my_test <- aov(response ~ ploidy * timepoint * treatment, data = dat_stat)
 my_test_summary <- summary(my_test)
 summary(my_test)
 
-tx <- with(dat_stat, interaction(timepoint,trt,ploidy))
+```
+
+Run post-hoc test if interaction is significant
+```{r}
+tx <- with(dat_stat, interaction(timepoint,treatment,ploidy))
 amod <- aov(response ~ tx, data = dat_stat)
 mult_comp <- HSD.test(amod, "tx", group=TRUE, console=TRUE)
 
-write.table(my_test_summary[[1]],                      file = "stats/AOV_atpase.csv",      row.names = TRUE)
-write.table(mult_comp$groups,                     file = "stats/HSD_test_atpase.csv", row.names = TRUE)
+```
 
-beep(2)
-
+Write output
+```{r}
+write.table(my_test_summary[[1]],  file = "aov.csv",  row.names = TRUE) # Model output
+write.table(mult_comp$groups,      file = "HSD.csv",  row.names = TRUE) # HSD output
 ```
