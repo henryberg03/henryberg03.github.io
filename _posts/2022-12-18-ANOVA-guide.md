@@ -8,8 +8,6 @@ tags: guides
 comments: true
 ---
 
-------------------------------------------------------------------------------------------------------
-
 Link to [R markdown file](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/9f562417b79a3fee5d32aefd11eeb46948cdfc17/guides/2022-12-18-ANOVA/ANOVA-guide.Rmd) </br>
 Link to [dataset](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/ATPase_dataset.csv)
 
@@ -18,10 +16,10 @@ Link to [dataset](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.
 #### *ANOVA Assumptions (in order of importance):*
 1. **Independence** - Data are independent
 2. **Normality** - The response variable has a normal distribution
-3. **Independence** - The sample variance across factors is similar
+3. **Homoscedasticity** - The sample variance across factors is similar
 
 ```{R}
-# Test ANOVA assumptions
+# Test normality; transform if necessary
 
 # Define dataset
 dat_stat <- dat_stat
@@ -33,11 +31,6 @@ dat_stat$timepoint  <- factor(dat_stat$timepoint, levels = c("0","11","12","15",
 
 # Assign response variable
 test_me <- dat_stat$ATPase
-
-# Check variance across factors
-dat_stat %>% group_by(treatment) %>% summarise(mean=mean(ATPase), sd=sd(ATPase), count=n())
-dat_stat %>% group_by(ploidy) %>% summarise(mean=mean(ATPase), sd=sd(ATPase), count=n())
-dat_stat %>% group_by(timepoint) %>% summarise(mean=mean(ATPase), sd=sd(ATPase), count=n())
 
 # Test for normality
 qqnorm(test_me, main = "Q-Q Plot: untransformed") # check linearity
@@ -80,16 +73,23 @@ aictab(model.set, modnames = model.names)
 ```
 ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/AIC.png?raw=true)
 
-## STEP 4: Run post-hoc test if interaction is significant
+## STEP 4: Check for Homoscedasticity across factors in model
+```{r}
+leveneTest(response ~ interaction(ploidy,timepoint,treatment), dat_stat)
+```
+![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/homogeneity.png?raw=true)
 
+## STEP 5: Run post-hoc test if interaction is significant
 ```{r}
 tx <- with(dat_stat, interaction(timepoint,treatment,ploidy)) # build interaction
 amod <- aov(response ~ tx, data = dat_stat) # run model
 mult_comp <- HSD.test(amod, "tx", group=TRUE, console=TRUE) # run HSD test
 ```
-
 ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/HSD.png?raw=true)
 
-## STEP 5: Plot w/ group labels
+Link to [AOV model output](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/aov.csv) </br>
+Link to [HSD output](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/HSD.csv)
 
+
+## STEP 6: Plot w/ group labels
 ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/atpase_suppl.png?raw=true)
