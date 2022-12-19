@@ -15,7 +15,7 @@ Load packages; if missing, install them
 rm(list=ls())
 
 ## Load Packages; if missing, install them
-load.lib<-c("tidyverse","bestNormalize","agricolae","nlme","multcomp","beepr") # List of required packages
+load.lib<-c("car","tidyverse","bestNormalize","agricolae","nlme","multcomp","rstatix","AICcmodavg","beepr") # List of required packages
 install.lib <- load.lib[!load.lib %in% installed.packages()] # Select missing packages
 for(lib in install.lib) install.packages(lib,dependencies=TRUE) # Install missing packages + dependencies
 sapply(load.lib,require,character=TRUE) # Load all packages.
@@ -28,10 +28,14 @@ dat_stat <- read.csv(file = "https://raw.githubusercontent.com/mattgeorgephd/mat
 
 head(dat_stat)
 
+dat_stat %>% group_by(treatment) %>% summarise(mean=mean(ATPase), sd=sd(ATPase), count=n())
+dat_stat %>% group_by(ploidy) %>% summarise(mean=mean(ATPase), sd=sd(ATPase), count=n())
+dat_stat %>% group_by(timepoint) %>% summarise(mean=mean(ATPase), sd=sd(ATPase), count=n())
+
 ```
 
 
-Prepare dataset for statistical testing
+Test ANOVA assumptions
 ```{R}
 # Define dataset
 dat_stat <- dat_stat
@@ -52,13 +56,14 @@ print(paste("shapiro test p-value, untransformed:", norm_test$p.value))
 
 # Normalize response variable if normality test failed
 if(norm_test$p.value<0.05)     {
-        normalized <- bestNormalize(test_me, main = "Q-Q Plot: transformed")
+        normalized <- bestNormalize(test_me)
         test_me <- normalized$x.t # overwrite
-        qqnorm(test_me) # check linearity of transformed response
+        qqnorm(test_me, main = "Q-Q Plot: transformed") # check linearity of transformed response
         qqline(test_me)
         norm_test <- shapiro.test(test_me) # p-value > 0.05 = good
         print(paste("shapiro test p-value, transformed:", norm_test$p.value))}
 dat_stat$response <- test_me # overwrite
+
 ```
 
 Run ANOVA
@@ -67,15 +72,31 @@ Run ANOVA
 my_test <- aov(response ~ ploidy * timepoint * treatment, data = dat_stat)
 my_test_summary <- summary(my_test)
 summary(my_test)
+```
+
+Compare model AIC scores
+```{r}
+
+# Compare model AIC scores (lowest score wins)
+other <- aov(response ~ ploidy * timepoint, data = dat_stat)
+
+model.set <- list(my_test, other)
+model.names <- c("ploidy:timepoint:treatment", "ploidy:timepoint")
+
+aictab(model.set, modnames = model.names)
 
 ```
 
-Run post-hoc test if interaction is significant
+# Check variance across factors w/ Levene's test - Homoscedasticity
 ```{r}
-tx <- with(dat_stat, interaction(timepoint,treatment,ploidy))
+leveneTest(response ~ interaction(ploidy,timepoint,treatment), dat_stat)
+```
+
+Run post-hoc test using best, significant interaction term
+```{r}
+tx <- with(dat_stat, interaction(timepoint,treatment,ploidy)) # build interaction 
 amod <- aov(response ~ tx, data = dat_stat)
 mult_comp <- HSD.test(amod, "tx", group=TRUE, console=TRUE)
-
 ```
 
 Write output
@@ -83,3 +104,6 @@ Write output
 write.table(my_test_summary[[1]],  file = "aov.csv",  row.names = TRUE) # Model output
 write.table(mult_comp$groups,      file = "HSD.csv",  row.names = TRUE) # HSD output
 ```
+
+
+

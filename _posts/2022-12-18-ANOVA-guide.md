@@ -8,7 +8,7 @@ tags: guides
 comments: true
 ---
 
-Link to [R markdown file](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/9f562417b79a3fee5d32aefd11eeb46948cdfc17/guides/2022-12-18-ANOVA/ANOVA-guide.Rmd) </br>
+Link to [R markdown file](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/9f562417b79a3fee5d32aefd11eeb46948cdfc17/guides/2022-12-18-ANOVA/ANOVA-guide.Rmd) <br/>
 Link to [dataset](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/ATPase_dataset.csv)
 
 ## STEP 1: Test ANOVA assumptions
@@ -88,7 +88,7 @@ mult_comp <- HSD.test(amod, "tx", group=TRUE, console=TRUE) # run HSD test
 ```
 ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/HSD.png?raw=true)
 
-Link to [AOV model output](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/aov.csv) </br>
+Link to [AOV model output](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/aov.csv) <br/>
 Link to [HSD output](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.github.io/master/guides/2022-12-18-ANOVA/HSD.csv)
 
 
