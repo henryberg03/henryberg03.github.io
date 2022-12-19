@@ -72,11 +72,12 @@ Run ANOVA
 my_test <- aov(response ~ ploidy * timepoint * treatment, data = dat_stat)
 my_test_summary <- summary(my_test)
 summary(my_test)
+
+car::qqPlot(residuals(my_test))
 ```
 
-Compare model AIC scores
+Compare model AIC (Akaike Information Criterion) scores
 ```{r}
-
 # Compare model AIC scores (lowest score wins)
 other <- aov(response ~ ploidy * timepoint, data = dat_stat)
 
