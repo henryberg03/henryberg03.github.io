@@ -48,9 +48,10 @@ if(norm_test$p.value<0.05)     {
         print(paste("shapiro test p-value, transformed:", norm_test$p.value))}
 dat_stat$response <- test_me # overwrite
 ```
+
 | untransformed | transformed |
 | :---:  | :---: |
-| ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/QQ_untransformed.png?raw=true)  | ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/QQ_transformed.png?raw=true) |       
+| ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/QQ_untransformed.png?raw=true)  | ![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/guides/2022-12-18-ANOVA/QQ_transformed.png?raw=true) |      
 
 ## STEP 2: Run ANOVA
 ```{r}
