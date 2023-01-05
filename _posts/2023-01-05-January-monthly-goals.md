@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mon. Aug. 01, 2022
-subtitle: August 2022 - Update & Monthly Goals
+title: Thu. Jan. 05, 2023
+subtitle: January 2023 - Update & Monthly Goals
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: monthly-goals
