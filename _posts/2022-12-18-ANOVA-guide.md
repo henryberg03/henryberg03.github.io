@@ -14,8 +14,8 @@ Link to [dataset](https://raw.githubusercontent.com/mattgeorgephd/mattgeorgephd.
 ## STEP 1: Test ANOVA assumptions
 
 #### *ANOVA Assumptions (in order of importance):*
-1. **Independence** - Data are independent
-2. **Normality** - The response variable has a normal distribution
+1. **Independence** - Data are independent (not sampled from the same individual, etc.)
+2. **Normality** - The response variable (and any numeric factors) has a normal distribution
 3. **Homoscedasticity** - The sample variance across factors is similar
 
 ```{R}

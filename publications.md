@@ -9,25 +9,29 @@ I can also be found on [Google Scholar](https://scholar.google.com/citations?use
 
 ## *In preparation*
 
-**George MN**, Cattau O, Vadopalas B, Gavery M, and Roberts SB (in prep). Investigating the etiology of triploid mortality: differences in the physiological and genomic response of diploid and triploid Pacific Oysters to marine heatwaves.
+**George MN**, Henderson M, Tsao N, Gavery M, and Roberts SB (in prep). Improved climate resilience in Pacific oysters through the optimization of hatchery-based environmental conditioning practices that leverage trans-generational plasticity.
+
+**George MN**, Klopp M, and Carrington E (in prep). Genetic markers associated with robust attachment in marine mussels following acute exposure to climate stressors.
 
 **George MN**, Jain R*, Trigg S, and Roberts SB (in prep). Diploid and triploid Pacific Oysters display different DNA methylation patterns after desiccation stress.
 
-Payne M*, **George MN**, Lowe A, Carrington E, and Ruesink J (in prep). Mussel aquaculture in future oceans: fatty acid analysis reveals how climate-driven changes in stratification alter food availability.
+**George MN**, Hayford H, and Carrington E (in prep). Ocean acidification negatively impacts the growth and appetite of predatory snails (*N. ostrina*).
 
-**George MN**, Hayford H, and Carrington E (in prep). Ocean acidification negatively impacts the growth and appetite of predatory snails (N. ostrina).
+Payne M, **George MN**, Lowe A, Carrington E, and Ruesink J (in prep). Mussel aquaculture in future oceans: fatty acid analysis reveals how climate-driven changes in stratification alter food availability.
+
+Cattau O, **George MN**, and Roberts SB (in prep). Citrate-synthase response and multiple-stress in Pacific oysters (*C. gigas*).
 
 ---
 
 ## *Under review, accepted, in Press*
 
-**George MN**, Liu X, Miller A, Zuiker E*, Xu H, and Lu L. (in press) An injectable, pH-responsive, adhesive hydrogel for bone tissue engineering inspired by the underwater attachment strategy of marine mussels. Materials and Engineering C. [10.1016/j.msec.2021.112606](https://doi.org/10.1016/j.msec.2021.112606)
-
-Clements J and **George MN** (accepted). Ocean acidification and bivalve byssus: explaining variable responses using meta-analysis. Marine Ecology Progress Series. Preprint available on [EcoEvoRxiv](https://ecoevorxiv.org/6bpqm/).
+**George MN**, Cattau O, Vadopalas B, Gavery M, and Roberts SB (under review). Triploid Pacific oysters exhibit stress response dysregulation and elevated mortality during marine heatwaves. Global Change Biology.
 
 ---
 
 ## *Publications within Marine Science*
+
+Clements J and **George MN** (2022). Ocean acidification and bivalve byssus: explaining variable responses using meta-analysis. Marine Ecology Progress Series. 694:89-103 [10.3354/meps14101](https://doi.org/10.3354/meps14101)
 
 **George MN**, O’Donnell MJ, Concodello M*, Carrington E (2022). Mussels Repair Shell Damage despite Limitations Imposed by Ocean Acidification. Journal of Marine Science and Engineering 10(3):359. [10.3390/jmse10030359](https://doi.org/10.3390/jmse10030359).
 
@@ -49,7 +53,9 @@ Swanson BO, **George MN**, Anderson SJ*, and Christy J (2013). Evolutionary vari
 
 ## *Publications within Biomedicine*
 
-**George MN**, Leavens KF, and Gadue P. (2021). Genome Editing Human Pluripotent Stem Cells to Model β-Cell Disease and Unmask Novel Genetic Modifiers. Frontiers in Endocrinology, 12, 643. [10.3389/fendo.2021.682625](https://doi.org/10.3389/fendo.2021.682625)
+**George MN**, Liu X, Miller A, Zuiker E*, Xu H, and Lu L. (2022) Injectable pH-responsive adhesive hydrogels for bone tissue engineering inspired by the underwater attachment strategy of marine mussels. Biomaterials Advances 133:112606. [10.1016/j.msec.2021.112606](https://doi.org/10.1016/j.msec.2021.112606)
+
+**George MN**, Leavens KF, and Gadue P. (2021). Genome Editing Human Pluripotent Stem Cells to Model β-Cell Disease and Unmask Novel Genetic Modifiers. Frontiers in Endocrinology, 12:643. [10.3389/fendo.2021.682625](https://doi.org/10.3389/fendo.2021.682625)
 
 Liu X, Gaihre B, **George MN**, Yong L, Tilton M, Yaszemski MJ, and Lu L. (2021) 2D phosphorene nanosheets, quantum dots, nanoribbons: synthesis and biomedical applications. Biomaterials Science 9:2768-2803. [10.1039/D0BM01972K](https://doi.org/10.1039/D0BM01972K)
 
