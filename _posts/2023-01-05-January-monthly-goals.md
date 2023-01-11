@@ -17,7 +17,7 @@ comments: true
 ### Monthly Goals for January
 1. [ ] Complete gigas-WGBS-ploidy-desiccation [manuscript](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit) by generating circos plot.
 2. [ ] complete thread testing form PSMFC mussel project
-3. [ ] Make presentation for PAG by January 8th
+3. [x] Make presentation for PAG by January 8th
 4. [ ] Order supplies for [USDA-SRGARP-gigas-carryover](https://github.com/mattgeorgephd/USDA-SRGARP-gigas-carryover)
 5. [ ] Complete power analysis for [USDA-NRSP-9-gigas-rDNA](https://github.com/mattgeorgephd/USDA-NRSP-8-gigas-rDNA)
 6. [ ] Complete power DNA extractions for [USDA-NRSP-9-gigas-rDNA](https://github.com/mattgeorgephd/USDA-NRSP-8-gigas-rDNA)

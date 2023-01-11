@@ -19,3 +19,9 @@ Today I:
 4. Addressed Mackenzie's comments in the NOPP-gigas-ploidy-temp manuscript
 
 ### 1/11/2023
+Today I:
+1. Emailed Laura Kraft at WSU about collaboration
+2. Emailed Mike at globalaquaculturesupply about batch ordering of hatching jars for [USDA-SRGARP-gigas-carryover](https://github.com/mattgeorgephd/USDA-SRGARP-gigas-carryover) project.
+3. Completed technical review of manuscript for Christopher Monson
+4. Organized [WGBS-gigas-ploidy-desiccation]() repo in an effort to prepare manuscript
+5. 
