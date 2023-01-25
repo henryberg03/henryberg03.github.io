@@ -42,4 +42,15 @@ Today I attended the USDA/ARS meeting in Portland, OR. Neil outlined the USDA's 
 2. Submitted travel reimbursement for PAG meeting
 3. Ordered Hatching Jars for USDA-SRGARP grant
 4. Applied for NOAA job
-5. 
+
+### 1/23/2023
+1. Lab Meeting
+2. Worked on [WGBS-gigas-ploidy-desiccation]() manuscript
+3. Contacted CRITFC about Fishery Scientist Position
+4. WSG Planning
+
+### 1/24/2023
+1. Attended WSG PI meeting
+2. Submitted travel reimbursement for PAG meeting
+3. Applied for King County Position
+4. Travel to Portland
