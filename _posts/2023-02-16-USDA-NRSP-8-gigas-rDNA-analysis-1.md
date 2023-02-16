@@ -46,22 +46,26 @@ I used the PWR package to determine the number of samples that we need to sequen
 library(pwr)
 
 # Set parameters
-alpha <- 0.05  # significance level
-power <- 0.80  # desired power
-sigma <-  5    # known population standard deviation
-n <- NULL      # sample size to be determined
+alpha   <- 0.05  # significance level
+power   <- 0.80  # desired power
+sigma   <- 8.4   # standard deviation of control group
+delta   <- 20    # difference between trt and control group  
+n       <- NULL  # sample size to be determined
 
 # Perform power analysis
-pwr::pwr.t.test(d = 10/sigma, 
-                sig.level = alpha, 
-                power = power,
-                n = n)
+pwr.t.test(d = delta/sigma, sig.level = alpha, power = power, n = n)
+
 ```
 
 Here are the results (best case scenario):
 mito_copy nuumber <br />
-| difference | SD | n required  |
-|---|---|
+
+| delta | SD | n required (each group)  |
+|---|---|---|
+| 20 | 6.8 | 3.13 |
 | 10 | 6.8 | 8.3 |
 | 5 | 6.8 | 30.02 |
+| 20 | 8.4 | 4.0 |
+| 10 | 8.4| 12.11 |
+| 5 | 8.4 | 45.3 |
 
