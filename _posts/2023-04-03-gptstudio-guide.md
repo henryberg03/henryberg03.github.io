@@ -8,20 +8,20 @@ tags: guides
 comments: true
 ---
 
-## gptstudio R package Guide
+## gptstudio R package Setup Guide
 The goal of gptstudio is for R programmers to easily incorporate use of large language models (LLMs) into their project workflows. These models appear to be a step change in our use of text for knowledge work, but you should carefully consider ethical implications of using these models. Ethics of LLMs (also called Foundation Models) is an area of very active discussion.
 
 Here is the readme for the [gptstudio package](https://cran.r-project.org/web/packages/gptstudio/readme/README.html).
 Here is the [R markdown file](/post_images/20230403/gptstudio_guide.Rmd) used in this guide
 
-Our goal is to use gptstudio to write code like this: </br>
+Our goal is to use gptstudio to write and improve code by chatting: </br>
 ![](https://media.licdn.com/dms/image/C5622AQE-HSETS-ecDA/feedshare-shrink_800/0/1679282606912?e=1682553600&v=beta&t=3FlotfxJ8XoICwS7SCIFvrn25nHZCkxmlXw2fji9hmg)
 
 ### Step 1: Setup OpenAI Key + Rstudio
-
 1. Make an [OpenAI account](https://chat.openai.com/auth/login)
 2. Follow this link to create an [OpenAI API key](https://platform.openai.com/account/api-keys)
-3. Create a project in R Rstudio. Install gptstudio package using:
+3. Create a Project in R Rstudio. Open that project and work within it.
+4. Install gptstudio package using:
 
  ```
  ## clear workspace
@@ -32,31 +32,44 @@ Our goal is to use gptstudio to write code like this: </br>
  install.lib <- load.lib[!load.lib %in% installed.packages()] # Select missing packages
  for(lib in install.lib) install.packages(lib,dependencies=TRUE) # Install missing packages + dependencies
  sapply(load.lib,require,character=TRUE) # Load all packages.
-
  ```
 
-4. Setup your API key in the RStudio Project by adding the following line to .Renviron  
+4. Setup your API key in the RStudio Project by opening the .Renviron file for your project
 
 ```
 require(usethis)
 edit_r_environ(scope="project")
-
-# paste: OPENAI_API_KEY= "<APIKEY>"
-# restart RStudio
 ```
 
-### Step 2: Improve plot
-Using the `iris` dataset, lets make a plot and have gptstudio improve it. Here is the base code:
+and adding this line (replacing <APIKEY> with your key, keeping the quotes):
 
+```{r}
+OPENAI_API_KEY= "<APIKEY>"
+restart RStudio
 ```
-ggplot(data = iris,aes(Sepal.Length,Petal.Length)) + geom_point()
+
+### Step 1: Use the ChatGPT shiny app to generate a plot
+
+Navigate to the shiny app by going to the `Addins` dropdown menu and selecting `ChatGPT`
+
+![](/post_images/20230403/0.png)
+
+Within the shiny app, give it the following prompt:
+
+`Write some R code that makes a scatterplot of Pepal.Length across Setal.Length using the iris dataset`
+
+Here is what it looked like:
+
+![](/post_images/20230403/0_1.png)
+
+Here was the output:
+```
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) + geom_point()
 ```
 
-This is the output:
+### Step 2: Use the ChatGPT in Source to improve the plot
 
-![](/post_images/20230403/1.png)
-
-Now lets improve it by adding a comment and selecting the `ChatGPT in source` option from the Addins menu
+Now lets improve the plot that we generated in the shiny app. You can do this by adding the code to an R chunk in the RMD file, adding a comment next to the code you want improved, highlighting it, and selecting the `ChatGPT in source` option from the `Addins` menu.
 
 ```
 # Improve this plot by using a non standard theme, coloring by species, and adding a second y-axis that shows Sepal.Width
@@ -92,9 +105,9 @@ To get this to work, I had to find where `pretty_breaks` came from. Installing a
 Here is what it looks like:
 ![](/post_images/20230403/3.png)
 
-### Let's keep going!
+### Round 2: Let's keep going!
 
-Input:
+#### Input:
 ```{r}
 # Improve this plot by removing gridlines, setting the minimum of each y axis to zero, make the plot background white, increase the size of points, add a linear regression that plots relationship between Sepal.Length and Petal.Length across all species, and add R-squared value for linear regression to the plot.
 ggplot(data = iris, aes(Sepal.Length, Petal.Length, color = Species)) +
@@ -106,7 +119,7 @@ ggplot(data = iris, aes(Sepal.Length, Petal.Length, color = Species)) +
 
 ```
 
-Output:
+#### Output:
 ```{r}
 # Solution:
 # Add the following code to the existing code:
@@ -139,7 +152,9 @@ It looks like it failed to note that the ggpmisc package was required for stat_p
 
 ![](/post_images/20230403/4.png)
 
-And Round 3:
+The plot still doesn't look right. The code overlays the whole equation for the regression line and placed it in the upper right hand corner. Let's ask it to fix it.
+
+#### And Round 3 (I added the suggestions as a list this time)
 
 ```
 # Improve this plot by:
@@ -165,7 +180,7 @@ ggplot(data = iris, aes(Sepal.Length, Petal.Length, color = Species)) +
                parse = TRUE, label.x.npc = "right", label.y.npc = 0.9)  # Add R-squared value for linear regression.
 ```
 
-The output:
+#### The output, with pretty purple hues!
 ```
 ggplot(data = iris, aes(Sepal.Length, Petal.Length, color = Species)) +
   geom_point(size = 4, alpha = 0.8) + # Set alpha to 0.8 for better visibility
