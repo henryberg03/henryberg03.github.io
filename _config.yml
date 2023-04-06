@@ -42,7 +42,7 @@ round-avatar: true
 social-network-links:
   email: "hberg@uw.edu"
   ORCID:
-  github:
+  github: "https://github.com/henryberg03"
   linkedin:
 
 #  reddit: yourname
@@ -78,7 +78,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "http://henryberg03.github.io"
+url-pretty: "https://github.com/henryberg03"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
