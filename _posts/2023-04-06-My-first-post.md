@@ -13,6 +13,8 @@ comments: true
 *single*
 >Block text
 
+Ctrl Shift M
+
 ```Something```
 ![](https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg)
 
