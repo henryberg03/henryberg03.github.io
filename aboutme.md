@@ -5,7 +5,7 @@ subtitle: University of Washington
 ---
 
 ### Profiles
-[CV]() | [LinkedIn]()
+[CV]() | [LinkedIn](https://www.linkedin.com/in/henry-berg-fish/)
 
 
 ### Current Research
@@ -19,4 +19,4 @@ subtitle: University of Washington
 
  **School:** School of Aquatic and Fishery Sciences
 
- **Mailing address:**
+ **Mailing address:** 3738 N Frace Ave
