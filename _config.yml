@@ -25,7 +25,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: #"/assets/img/Headshot_MNG_square.jpg"
+avatar: "/assets/img/Headshot"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -43,7 +43,7 @@ social-network-links:
   email: "hberg@uw.edu"
   ORCID:
   github: "https://github.com/henryberg03"
-  linkedin:
+  linkedin: "https://www.linkedin.com/in/henry-berg-fish/"
 
 #  reddit: yourname
 #  linkedin: matt-george-65a4b94b
