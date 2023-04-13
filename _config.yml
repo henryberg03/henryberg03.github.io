@@ -14,12 +14,12 @@ author: Henry Berg
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  CV:
+  CV: "CV"
   About: "aboutme"
   Lab Notebook: "notebook"
-  Publications:
-  Outreach:
-  Teaching:
+  #Publications:
+  Outreach: "Outreach"
+  #Teaching:
 
 # --- Logo --- #
 
