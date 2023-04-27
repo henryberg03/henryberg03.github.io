@@ -2,7 +2,7 @@
 layout: post
 title: Byssal Threads
 subtitle: Thread Testing Low Priority
-tags: Mytilus byssus
+tags: Mytilus-byssus
 comments: true
 ---
 
