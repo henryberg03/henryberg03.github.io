@@ -13,5 +13,5 @@ Finished the first sheet of the lower priority treatment samples.
 
 [Link to master branch](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
 
-![](http://www.quickmeme.com/img/23/23c1039f3b0725883a623fee778e91111844f11b5f0426f244e6ec1ff4379c07.jpg)
-<br> [Link to meme](http://www.quickmeme.com/meme/35il32)
+![](https://i.redd.it/djaawek9xbs61.jpg)
+<br> [Link to meme](https://www.reddit.com/r/memes/comments/mo2rml/mussels_dont_pump_weights_apparently/)
