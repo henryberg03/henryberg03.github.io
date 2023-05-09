@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Byssal Threads 4/27/23
-subtitle: Thread Testing Low Priority
-tags: Mytilus-byssus
+title: Gigas Carryover 5/02/23
+subtitle: RNA Training
+tags: RNA-Gigas-Carryover
 comments: true
 ---
 
-# *Mytilus byssus* Thread Testing
-Finished another sheet of low priority samples
+# *Gigas* RNA Extraction
+Grace led a training for oyster RNA extractions.
 
-<br> Started on the last sheet of the low priority groups. Had some higher numbers with some of the samples. Some reaching over 0.3 on the pull test.
+<br> Training included both Grace and Eric. I believe we preformed 7 extractions. Unfortunately I had to leave right after the wash steps, so I have yet to preform the quality checks (Nanodrop & Qubit).
 
 
 <br> Will be in next week on Thursday.
 
 [Link to master branch](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
 
-![](https://i.redd.it/qhewwrhc3sv71.png)
-<br> [Link to meme](https://www.reddit.com/r/memes/comments/qg45pr/seafood_diet/)
+![](https://i.pinimg.com/originals/c0/73/b6/c073b65d9a6bd357c268c0da35e557a0.jpg)
+<br> [Link to meme](pinterest.com/pin/622341242240442368/)
