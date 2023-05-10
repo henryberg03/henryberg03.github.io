@@ -12,7 +12,7 @@ Grace led a training for oyster RNA extractions.
 <br> Training included both Grace and Eric. I believe we preformed 7 extractions. Unfortunately I had to leave right after the wash steps, so I have yet to preform the quality checks (Nanodrop & Qubit).
 
 
-<br> Will be in next week on Thursday.
+<br> Will be in this week on Thursday.
 
 [Link to master branch](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
 
