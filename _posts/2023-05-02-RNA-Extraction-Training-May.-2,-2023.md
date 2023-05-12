@@ -9,7 +9,7 @@ comments: true
 # *Gigas* RNA Extraction
 Grace led a training for oyster RNA extractions.
 
-<br> Training included both Grace and Eric. I believe we preformed 7 extractions. Unfortunately I had to leave right after the wash steps, so I have yet to preform the quality checks (Nanodrop & Qubit).
+<br> Training included both Grace and Eric. I believe we preformed 5 extractions. Unfortunately I had to leave right after the wash steps, so I have yet to preform the quality checks (Nanodrop & Qubit).
 
 
 <br> Will be in this week on Thursday.
