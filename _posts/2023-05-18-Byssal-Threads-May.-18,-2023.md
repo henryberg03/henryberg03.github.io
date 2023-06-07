@@ -16,5 +16,5 @@ Preformed thread tests within my normal calendar hours. Worked on testing the ex
 
 [Link to master branch](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
 
-![](http://www.quickmeme.com/img/a5/a5b738a54fccfec5ed1a16cf4f61350471e0166ac0ce4a54aabec41ed44d4929.jpg)
-<br> [Link to meme](http://www.quickmeme.com/meme/35ck24)
+![](https://i.chzbgr.com/full/594531584/h00435596/when-seafood-goes-bad)
+<br> [Link to meme](https://cheezburger.com/594531584)
