@@ -12,9 +12,9 @@ Coming back the day after meeting with Matt George (mattgeorgephd) to sort throu
 <br> I've looked through all of the QC plots and flagged a few as "scrap". I did flag a few I need to revisit. The plots I'm revisiting may or may not be errors, I will be seeing how the plaques came off.
 
 
-<br> Tomorrow I will be going through the QC plots I flagged to revisit and schedule a meeting with Matt to go over making graphs. 
+<br> Tomorrow I will be going through the QC plots I flagged to revisit and schedule a meeting with Matt to go over making graphs.
 
 [Link to master branch](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
 
-![](http://www.quickmeme.com/img/a4/a40b64e7c28103c1fafa4b332935260d5c9b6fb6559a4d1654d21c4f5f9f9490.jpg)
-<br> [Link to meme](http://www.quickmeme.com/meme/36kl6h)
+![](https://i.pinimg.com/564x/c0/ba/43/c0ba43a50835a1c5f0923777d3b82612.jpg)
+<br> [Link to meme](https://www.pinterest.com/pin/170503535883406945/)
